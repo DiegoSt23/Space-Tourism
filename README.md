@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot.JPG)
+[Screenshot](./assets/screenshot.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/DiegoSt23/Space-Tourism)
-- Live Site URL: [Add live site URL here](https://space-tourism-three.vercel.app/)
+- Solution URL: [Solution](https://github.com/DiegoSt23/Space-Tourism)
+- Live Site URL: [Repo](https://space-tourism-three.vercel.app/)
 
 ## My process
 

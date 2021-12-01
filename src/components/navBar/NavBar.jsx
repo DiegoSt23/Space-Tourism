@@ -23,10 +23,10 @@ const NavBar = () => {
 
   return (
     <header className="nav-bar">
-      <section className="logo-container">
+      <div className="logo-container">
         <img src={logo} alt="logo" />
-      </section>
-      <section className="nav-bar-background">
+      </div>
+      <div className="nav-bar-background">
         <div className="line-container">
           <div className="line"></div>
         </div>
@@ -63,7 +63,7 @@ const NavBar = () => {
             <p className="text">TECHNOLOGY</p>
           </NavLink>
         </div>
-      </section>
+      </div>
       <AnimatePresence
         initial={false}
         exitBeforeEnter={true}

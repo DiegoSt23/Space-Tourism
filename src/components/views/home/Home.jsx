@@ -21,11 +21,11 @@ const Home = () => {
             because we’ll give you a truly out of this world experience!
           </p>
         </motion.section>
-        <section className="info-container-2">
+        <div className="info-container-2">
           <section className="explore-container">
             <h2>EXPLORE</h2>
           </section>
-        </section>
+        </div>
       </div>
     </div>
   )

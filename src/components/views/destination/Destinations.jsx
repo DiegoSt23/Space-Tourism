@@ -1,5 +1,5 @@
 import "../../../styles/destinations.css";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 
 // React Router
 import { Outlet, useNavigate } from "react-router";

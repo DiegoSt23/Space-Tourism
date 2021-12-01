@@ -85,7 +85,8 @@
   justify-content: flex-end;
 }
 .member-image {
-  width: 70%;
+  height: 80%;
+  width: auto;
 }
 
 /* //////////////////////RESPONSIVE//////////////////////// */

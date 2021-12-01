@@ -70,7 +70,7 @@ h2 {
   .home-main-container {
     height: auto;
     background-image: url("../assets/home/background-home-tablet.jpg");
-    background-size: cover;
+    background-attachment: fixed;
   }
   .home {
     width: 60%;

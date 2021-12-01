@@ -103,6 +103,7 @@
   .technology-background {
     height: auto;
     background-image: url("../assets/technology/background-technology-tablet.jpg");
+    background-attachment: fixed;
   }
   .title-container {
     height: auto;

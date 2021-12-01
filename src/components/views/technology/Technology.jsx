@@ -6,7 +6,8 @@ import TechnologiesNavBar from "./TechnologiesNavBar";
 const Technology = ({ data }) => {
   const portraitImage = data.imagePortrait;
   const landscapeImage = data.imageLandscape;
-  const [image, setImage] = useState("")
+  const [image, setImage] = useState("");
+  
   
   useEffect(() => {
     if (window.screen.width > 992) {

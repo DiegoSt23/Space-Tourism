@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
 }
 .title-container {
   width: 80%;
@@ -110,7 +111,7 @@
   .destination-background {
     height: auto;
     background-image: url("../assets/destination/background-destination-tablet.jpg");
-    background-size: cover;
+    background-attachment: fixed;
   }
   .title-container {
     height: auto;

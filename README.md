@@ -6,7 +6,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -24,14 +23,10 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
 
-### Screenshot
-
-[Screenshot](./assets/screenshot.JPG)
-
 ### Links
 
-- Solution URL: [Solution](https://github.com/DiegoSt23/Space-Tourism)
-- Live Site URL: [Repo](https://space-tourism-three.vercel.app/)
+- Solution URL: [Repo](https://github.com/DiegoSt23/Space-Tourism)
+- Live Site URL: [Site](https://space-tourism-three.vercel.app/)
 
 ## My process
 

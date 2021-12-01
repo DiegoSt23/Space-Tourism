@@ -43,21 +43,21 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "option")}
-            to="/destination"
+            to="/destination/moon"
           >
             <>01</>
             <p className="text">DESTINATION</p>
           </NavLink>
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "option")}
-            to="/crew"
+            to="/crew/commander"
           >
             <p>02</p>
             <p className="text">CREW</p>
           </NavLink>
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "option")}
-            to="/technology"
+            to="/technology/vehicle"
           >
             <p>03</p>
             <p className="text">TECHNOLOGY</p>

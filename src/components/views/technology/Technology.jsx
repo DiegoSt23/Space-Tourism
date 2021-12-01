@@ -3,19 +3,22 @@ import { useEffect, useState } from "react";
 // Components
 import TechnologiesNavBar from "./TechnologiesNavBar";
 
+// useWidth
+import useWindowDimensions from "../../../useWidth/useWidth";
+
 const Technology = ({ data }) => {
+  const { width } = useWindowDimensions();
   const portraitImage = data.imagePortrait;
   const landscapeImage = data.imageLandscape;
   const [image, setImage] = useState("");
-  
-  
+ 
   useEffect(() => {
-    if (window.screen.width > 992) {
+    if (width > 992) {
       setImage(portraitImage)
     } else {
       setImage(landscapeImage)
     }
-  }, [data, landscapeImage, portraitImage]);
+  }, [data, landscapeImage, portraitImage, width]);
   
   return (
     <>

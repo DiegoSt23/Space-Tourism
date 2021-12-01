@@ -6,7 +6,7 @@ const TechnologiesNavBar = () => {
     <div className="technologies-nav-bar">
       <NavLink
         className={(navData) => (navData.isActive ? "technology-active" : "technology-option")}
-        to="/technology"
+        to="/technology/vehicle"
       >
         <p>1</p>
       </NavLink>

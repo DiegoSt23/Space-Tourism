@@ -6,7 +6,7 @@ const CrewNavBar = () => {
     <div className="crew-nav-bar">
       <NavLink
         className={(navData) => (navData.isActive ? "crew-active" : "crew-option")}
-        to="/crew"
+        to="/crew/commander"
       >
       </NavLink>
       <NavLink

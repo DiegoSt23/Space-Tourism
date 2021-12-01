@@ -12,6 +12,7 @@ import Crew from "./components/views/crew/Crew";
 import CrewMember from "./components/views/crew/CrewMember";
 import Technologies from "./components/views/technology/Technologies";
 import Technology from "./components/views/technology/Technology";
+import Error from "./components/views/error/Error";
 
 // Information 
 import { moonData, marsData, europaData, titanData } from "./assets/destination/destinationInfo";
@@ -24,25 +25,26 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/destination" element={<Destinations />}>
-            <Route path="" element={<Destination data={moonData} />}/>
-            <Route path="mars" element={<Destination data={marsData}/>} />
+          <Route path="/" element={<Home/>}/>
+          <Route path="/destination" element={<Destinations/>}>
+            <Route path="moon" element={<Destination data={moonData}/>}/>
+            <Route path="mars" element={<Destination data={marsData}/>}/>
             <Route path="europa" element={<Destination data={europaData}/>} />
             <Route path="titan" element={<Destination data={titanData}/>} />
           </Route>
           <Route path="/crew" element={<Crew />}>
-            <Route path="" element={<CrewMember data={commander}/>}/>
+            <Route path="commander" element={<CrewMember data={commander}/>}/>
             <Route path="missionSpecialist" element={<CrewMember data={missionSpecialist}/>}/>
             <Route path="pilot" element={<CrewMember data={pilot}/>}/>
             <Route path="flightEngineer" element={<CrewMember data={flightEngineer}/>}/>
           </Route>
           <Route path="/technology" element={<Technologies/>}>
-            <Route path="" element={<Technology data={vehicle}/>}/>
+            <Route path="vehicle" element={<Technology data={vehicle}/>}/>
             <Route path="spaceport" element={<Technology data={spaceport}/>}/>
             <Route path="capsule" element={<Technology data={capsule}/>}/>
           </Route>
-        </Routes>
+          <Route path="*" element={<Error/>} />
+        </Routes>       
       </Router>
     </div>
   );

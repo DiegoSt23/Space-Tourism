@@ -6,7 +6,7 @@ const DestinationNavBar = () => {
     <div className="destination-nav-bar">
       <NavLink
         className={(navData) => (navData.isActive ? "destination-active" : "destination-option")}
-        to="/destination"
+        to="/destination/moon"
       >
         <p>MOON</p>
       </NavLink>

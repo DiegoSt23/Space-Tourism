@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import menuClose from "../../assets/shared/icon-close.svg";
 
 // Components
@@ -8,6 +9,9 @@ import { NavLink } from "react-router-dom";
 
 // Framer Motion
 import { motion } from "framer-motion";
+
+// useWidth
+import useWindowDimensions from "../../useWidth/useWidth";
 
 const dropIn = {
   hidden: {
@@ -31,6 +35,14 @@ const dropIn = {
 };
 
 const ResponsiveMenu = ({ handleClose }) => {
+  const { width } = useWindowDimensions();
+  
+  useEffect(() => {
+    if (width > 576) {
+      handleClose()
+    }
+  }, [width, handleClose]);
+
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
@@ -56,7 +68,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/destination"
+            to="/destination7moon"
           >
             <p>01</p>
             <p className="hidden-text">DESTINATION</p>
@@ -64,7 +76,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/crew"
+            to="/crew/commander"
           >
             <p>02</p>
             <p className="hidden-text">CREW</p>
@@ -72,7 +84,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/technology"
+            to="/technology/vehicle"
           >
             <p>03</p>
             <p className="hidden-text">TECHNOLOGY</p>

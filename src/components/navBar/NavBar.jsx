@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import ResponsiveMenu from "./ResponsiveMenu";
 
 // Framer Motion
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const NavBar = () => {
   const [modalOpen, setModalOpen] = useState(false);

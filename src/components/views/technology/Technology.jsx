@@ -14,7 +14,7 @@ const Technology = ({ data }) => {
     } else {
       setImage(landscapeImage)
     }
-  }, [data, landscapeImage, portraitImage, window.screen.width]);
+  }, [data, landscapeImage, portraitImage]);
   
   return (
     <>

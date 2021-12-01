@@ -68,7 +68,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/destination7moon"
+            to="/destination/moon"
           >
             <p>01</p>
             <p className="hidden-text">DESTINATION</p>

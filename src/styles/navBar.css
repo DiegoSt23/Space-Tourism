@@ -94,6 +94,7 @@
     width: 10%;
     display: block;
     padding: 10px;
+    z-index: 2;
   }
 
   /* Hiden Menu */
@@ -119,17 +120,13 @@
     background-color: rgba(255, 255, 255, 0.034);
     font-family: "Barlow Condensed", sans-serif;
   }
-  .close-icon-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px;
-  }
+
   .hidden-nav-bar {
     width: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
   }
   .hidden-text {
     margin-left: 10px;

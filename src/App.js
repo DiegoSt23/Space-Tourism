@@ -29,10 +29,10 @@ function App() {
           <Route path="/destination" element={<Destinations/>}>
             <Route path="moon" element={<Destination data={moonData}/>}/>
             <Route path="mars" element={<Destination data={marsData}/>}/>
-            <Route path="europa" element={<Destination data={europaData}/>} />
-            <Route path="titan" element={<Destination data={titanData}/>} />
+            <Route path="europa" element={<Destination data={europaData}/>}/>
+            <Route path="titan" element={<Destination data={titanData}/>}/>
           </Route>
-          <Route path="/crew" element={<Crew />}>
+          <Route path="/crew" element={<Crew/>}>
             <Route path="commander" element={<CrewMember data={commander}/>}/>
             <Route path="missionSpecialist" element={<CrewMember data={missionSpecialist}/>}/>
             <Route path="pilot" element={<CrewMember data={pilot}/>}/>

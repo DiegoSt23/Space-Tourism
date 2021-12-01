@@ -1,5 +1,8 @@
 import "../../../styles/home.css";
 
+// React Router
+import { Link } from "react-router-dom";
+
 // Framer Motion
 import { motion } from "framer-motion";
 
@@ -23,7 +26,9 @@ const Home = () => {
         </motion.section>
         <div className="info-container-2">
           <section className="explore-container">
-            <h2>EXPLORE</h2>
+            <Link to="/destination" className="link">
+              <h2>EXPLORE</h2>
+            </Link>
           </section>
         </div>
       </div>

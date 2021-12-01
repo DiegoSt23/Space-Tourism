@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import menuClose from "../../assets/shared/icon-close.svg";
 
 // Components
 import Backdrop from "./Backdrop";
@@ -53,9 +52,6 @@ const ResponsiveMenu = ({ handleClose }) => {
         animate="visible"
         exit="exit"
       >
-        <section className="close-icon-container">
-          <img src={menuClose} alt="close-icon" onClick={handleClose} />
-        </section>
         <section className="hidden-nav-bar">
           <NavLink
             onClick={handleClose}
@@ -68,7 +64,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/destination/moon"
+            to="/destination"
           >
             <p>01</p>
             <p className="hidden-text">DESTINATION</p>
@@ -76,7 +72,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/crew/commander"
+            to="/crew"
           >
             <p>02</p>
             <p className="hidden-text">CREW</p>
@@ -84,7 +80,7 @@ const ResponsiveMenu = ({ handleClose }) => {
           <NavLink
             onClick={handleClose}
             className={(navData) => (navData.isActive ? "hidden-active" : "hidden-option")}
-            to="/technology/vehicle"
+            to="/technology"
           >
             <p>03</p>
             <p className="hidden-text">TECHNOLOGY</p>

@@ -2,9 +2,10 @@ import "../../styles/navBar.css";
 import { useState } from "react";
 import logo from "../../assets/shared/logo.svg";
 import menuHamburguer from "../../assets/shared/icon-hamburger.svg";
+import menuClose from "../../assets/shared/icon-close.svg";
 
 // React Router
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 // Components
 import ResponsiveMenu from "./ResponsiveMenu";
@@ -24,14 +25,20 @@ const NavBar = () => {
   return (
     <header className="nav-bar">
       <div className="logo-container">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="nav-bar-background">
         <div className="line-container">
           <div className="line"></div>
         </div>
         <div className="menu-logo-container">
-          <img src={menuHamburguer} alt="menu" onClick={handleModalOpen} />
+          {modalOpen ? (
+            <img src={menuClose} alt="close-menu" onClick={close} />
+          ) : (
+            <img src={menuHamburguer} alt="open-menu" onClick={handleModalOpen}/>
+          )}
         </div>
         <div className="nav-bar-container">
           <NavLink
@@ -43,21 +50,21 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "option")}
-            to="/destination/moon"
+            to="/destination"
           >
             <>01</>
             <p className="text">DESTINATION</p>
           </NavLink>
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "option")}
-            to="/crew/commander"
+            to="/crew"
           >
             <p>02</p>
             <p className="text">CREW</p>
           </NavLink>
           <NavLink
             className={(navData) => (navData.isActive ? "active" : "option")}
-            to="/technology/vehicle"
+            to="/technology"
           >
             <p>03</p>
             <p className="text">TECHNOLOGY</p>
